@@ -1,51 +1,69 @@
+/* General Page Styles */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+    background-color: #111; /* Almost black background */
+    color: #ddd; /* Light grey text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
+/* Content Container */
 .container {
-    max-width: 600px;
-    margin: 50px auto;
+    display: flex;
+    max-width: 800px;
+    align-items: center;
     padding: 20px;
-    background: white;
+    background: #222; /* Slightly lighter than the background */
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
+/* Text Content */
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+/* Links */
+.links {
+    margin-top: 15px;
+}
+
+.links a {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 8px 15px;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    background: #666;
+}
+
+/* Profile Picture */
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
-}
-
-h1 {
-    margin: 10px 0;
-    font-size: 24px;
-}
-
-p {
-    color: #555;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.cv-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-    background-color: #007bff;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.cv-button:hover {
-    background-color: #0056b3;
+    border: 3px solid #666;
 }
